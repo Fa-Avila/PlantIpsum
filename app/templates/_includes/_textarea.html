@@ -1,0 +1,7 @@
+<div class="container" id="text-area">
+  <span id='result'>
+    {% for paragraph in paragraphs %}
+      <p>{{ paragraph | safe }}</p>
+    {% endfor %}
+  </span>
+</div>

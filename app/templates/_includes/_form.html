@@ -1,0 +1,11 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+
+<div class="container" id="form">
+  <h2>Generate</h2>
+  {{ wtf.quick_form(form) }}
+  <br />
+  <a href="{{ url_for('main.index') }}" class=" button btn btn-default">Refresh</a>
+  <br />
+  <br />
+  <a id="copyButton" class="button btn btn-default">Copy</a>
+</div> 

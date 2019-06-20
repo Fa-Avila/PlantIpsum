@@ -1,0 +1,72 @@
+h2{
+  color: #4CAF50;
+}
+.wrapper{
+  display: flex;
+  padding: 2em;
+  min-width: 600px;
+  overflow:auto;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover{
+  background-color: #4CAF50; /*Green*/
+  color: white;
+}
+.jumbotron{
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(img/plant_border4.png);
+  background-position: bottom;
+  background-size: cover;
+  color: black;
+}
+#footer{
+  padding: 2em;
+}
+#text-area{
+  overflow: scroll;
+  width: 100%;
+  height: 350px;
+  min-height: 350px;
+  padding: 4em;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 60px;
+  
+  border-image: url(img/plant_border3.png) 10% round;
+  -moz-border-image: url(img/plant_border3.png) 10% round;
+  -webkit-border-image: url(img/plant_border3.png) 10% round;
+  -o-border-image: url(img/plant_border3.png) 10% round;
+  
+  background-color: white;
+}
+#form{
+  display: block;
+  float: right;
+  overflow: hidden;
+  width: 400px;
+  min-width: 250px;
+  padding: 0 2em;
+  align-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px){
+  .wrapper{
+    min-width: 100%;
+    align-content: center;
+    flex-flow: column;
+    flex-direction: column-reverse;
+  }
+  #text-area{
+    min-width: 150px;
+    min-height: 300px;
+    padding: 2em;
+    border-width: 20px;
+  }
+  #form{
+    width: 100%;
+    min-width: 250px;
+    padding: 0 2em 2em;;
+    margin: 0;
+    float: none;
+  }
+}
