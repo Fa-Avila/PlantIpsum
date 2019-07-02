@@ -1,7 +1,7 @@
 from flask import render_template, flash, request
-from app.forms import GenerateForm
 from generate_text import generate
 from app.main import bp
+from app.main.forms import GenerateForm
 
 @bp.route('/', methods=['GET', 'POST'])
 def index():
